@@ -11,7 +11,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="homePageDesign.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Home Page</title>
 </head>
@@ -23,37 +23,42 @@
 
         <i class='bx bx-menu-alt-right' id="menu-begin"></i>
 
-        <nav class="navigation-menu" >
+        <nav class="navigation-menu">
             <ul>
                 <li class="li-tag"><a href="#home-page" class="on-page">Home</a></li>
                 <li class="li-tag"><a href="#about-page">About</a></li>
                 <li class="li-tag"><a href="#skill-page">Skill</a></li>
                 <li class="li-tag"><a href="#project-page">Projects</a></li>
+                <li class="li-tag"><a href="#contact-page">Contact</a></li>
             </ul>
         </nav>
 
     </header>
+
+
     <!-- Home section -->
     <section class="home-page sectionhead" id="home-page">
         <div class="home-intro">
             <p><span id="span-1">Hi, I am</span><br>
             <h1 class="animate__animated animate__pulse"> Divyansh Kaushal</h1><br>
-            <span id="span-2">
-                And I'm a <span class="change-wordes"></span> UI/UX designer, game developer<br>
-                and a Full-stack web developer
-            </span> </p>
+            <span id="span-2">And I'm a
+                <span class="change-words"></span>
+            </span>
+            </p>
             <nav class="social-link">
-                <a href="#"><i class='bx bxl-linkedin icon-space'></i></a>
-                <a href="#"><i class='bx bxl-github icon-space'></i></a>
-                <a href="#"><i class='bx bxl-gmail icon-space'></i></a>
+                <a href="https://www.linkedin.com/in/divyansh-kaushal-839601265/"><i
+                        class='bx bxl-linkedin icon-space'></i></a>
+                <a href="https://github.com/Divyansh21321"><i class='bx bxl-github icon-space'></i></a>
+                <a href="mailto: divyansh21321@iiitd.ac.in"><i class='bx bxl-gmail icon-space'></i></a>
             </nav>
+            <button type="button" class="btn-layout" style="padding: 2px;">Download CV</button>
         </div>
 
-        
+
         <div class="D-div">
-            
-            <img src="/images/Dcutdesign.png" alt="" class="D-image" >
-            
+
+            <img src="/images/Dcutdesign.png" alt="" class="D-image">
+
 
         </div>
 
@@ -67,13 +72,14 @@
             <h1 class="head-about animate__animated animate__pulse" style="margin-bottom: 20px;"> About <span style="color: red
             ;">Me</span> </h1>
             <h5 style="text-align: left; line-height: 1;">UI/UX Designer</h5>
-            <p style="color: #FFF6F1;">I am a second-year Computer Science and Design student.
+            <p style="color: #f5f5dc;">I am a second-year Computer Science and Design student.
                 I have a strong foundation in both front-end and back-end development.
                 In addition to my technical skills, I am also proficient in competitive programming. <br>
-                I have gained experience in languages and frameworks such as HTML, CSS, JavaScript, React, and Node.js.
-                I am also comfortable using tools like Git, GitHub, and VS Code.</p>
-
-            <button type="button" class="btn btn-danger">More...</button>
+                <span id="dot"></span>
+                <span id="content-add">I have gained experience in languages and frameworks such as HTML, CSS, JavaScript, React, and Node.js. I am also comfortable using tools like Git, GitHub, and VS Code.<br>I am excited to continue learning and growing as a developer, and I am looking for opportunities to apply my skills to real-world projects.<br></span>
+                </p>
+            <button onclick="moreClicked()" type="button" class="btn btn-danger" id="clickMore" style="background-color: rgb(202, 25, 25);">More...</button>
+            
 
         </div>
 
@@ -98,7 +104,7 @@
         <h1 class="head-about" style="margin-bottom: 30px;"> My <span style="color: red
             ;">Projects</span> </h1>
 
-        <div class="project-container">
+        <div class="project-container ">
 
             <div class="project-box">
                 <img src="images/tankstarbg1new.png" alt="" class="project-image">
@@ -124,7 +130,7 @@
 
                 </div>
             </div>
-            <div class="project-box">
+            <div class="project-box" id="artJug">
                 <img src="images/Artisanenew.png" alt="" class="project-image">
                 <div class="project-layer">
                     <h5>
@@ -139,12 +145,53 @@
 
         </div>
 
-        <div class="footer">
-            <a href="#home-page"><i class='bx bxs-chevron-up' id="up-arrow"></i></a>
-            <p>Back to home</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page sectionhead" id="contact-page">
+        <div class="inner-contact-page">
+            <div class="contact-content">
+
+                <h1 class="head-about animate__animated animate__pulse" style="margin-bottom: 20px;">Contact<span style="color: red
+                    ;"> Me!</span> </h1>
+                <span class="spans-3" style="margin-top: 3px;"><i class='bx bxl-gmail icon-space'
+                        style="margin-right: 5px; color: red;"></i><a
+                        href="mailto: divyansh21321@iiitd.ac.in">diyansh21321@iiitd.ac.in</a> </span><br>
+                <span class="spans-3" style="margin-top: 3px;"><i class='bx bxs-phone'
+                        style="margin-right: 5px; color: red;"></i><a href="#">91-9597599350</a> </span>
+                <nav class="social-link" style="margin-top: 10px;">
+                    <a href="https://www.linkedin.com/in/divyansh-kaushal-839601265/"><i
+                            class='bx bxl-linkedin icon-space'></i></a>
+                    <a href="https://github.com/Divyansh21321"><i class='bx bxl-github icon-space'></i></a>
+                    <a href="mailto: divyansh21321@iiitd.ac.in"><i class='bx bxl-gmail icon-space'></i></a>
+                </nav>
+
+            </div>
+
+            <div class="vline"></div>
+
+            <div class="forms">
+                <form action="" class="form-a">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="number" name="number" placeholder="Your Number">
+                    <input type="text" name="message" placeholder="Your Message" style="height: 100px; margin-bottom: 5px;">
+                    <button type="submit" class="btn-layout"
+                        style="border-width: 1.4px; background-color: #28282b; margin: 0; transform: none;">SUBMIT</button>
+                </form>
+            </div>
+
         </div>
 
     </section>
+
+
+    <div class="footer">
+        <div class="foot-div">
+            <a href="#home-page"><i class='bx bxs-chevron-up' id="up-arrow"></i></a>
+            <p>Back to home</p>
+        </div>
+    </div>
 
 
 
