@@ -102,9 +102,21 @@ body {
 }
 
 .D-image {
+    position: relative;
     width: 200px;
     opacity: 0.8;
+    top: -20px;
+    right: 15px;
+    animation: animateUser 4s linear infinite;
 }
+
+@keyframes animateUser {
+    50% {
+        right: 5px;
+        top: -10px;
+    }
+}
+
 
 .home-intro {
 
@@ -201,7 +213,8 @@ body {
     gap: 2rem;
 
 }
-#content-add{
+
+#content-add {
     display: none;
 }
 
@@ -209,17 +222,42 @@ body {
 
 
 /* skill css */
+
 .skill-page {
     min-height: 100vh;
+    margin-top: 10vh;
     padding: 9rem 9% 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
     background-color: #28282B;
 
 }
 
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainStripe {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.halfSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.oneStripe {
+    margin-bottom: 5px;
+}
 
 
 
@@ -405,14 +443,14 @@ body {
 
 @keyframes stretch {
     0% {
-      transform: scale(.8);
-      background-color: #ccc;
-      }
-  
-    100% {
-    background-color: #ccc;
+        transform: scale(.8);
+        background-color: #ccc;
     }
-  }
+
+    100% {
+        background-color: #ccc;
+    }
+}
 
 
 
@@ -476,13 +514,14 @@ body {
     }
 
     .D-image {
-        width: 30%;
+        width: 15%;
         opacity: 0.5;
-        margin-right: -200px;
+
     }
 
-    .D-tag {
-
+    .D-div {
+        margin-top: 30px;
+        margin-right: -700px;
         align-items: center;
     }
 
@@ -561,8 +600,8 @@ body {
 }
 
 /* line vl -> hl */
-@media(max-width: 610px){
-    .contact-page{
+@media(max-width: 610px) {
+    .contact-page {
         align-items: center;
         justify-content: center;
     }
@@ -582,16 +621,26 @@ body {
         animation-play-state: running;
         margin: 0 auto;
     }
+
     .inner-contact-page {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
 
 }
 
 
+@media(max-width: 840px) {
+    .mainStripe {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 

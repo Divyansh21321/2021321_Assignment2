@@ -36,16 +36,6 @@ let typing = new Typed('.change-words',{
 
 })
 
-// onclickMore = document.querySelector('#clickMore');
-// onclickMore.addEventListener('click',function(){
-
-//     document.getElementById('content-add').innerHTML= "I have gained experience in languages and frameworks such as HTML, CSS, JavaScript, React, and Node.js.\
-//     I am also comfortable using tools like Git, GitHub, and VS Code.<br>\
-//     "
-//     document.getElementById('clickMore').innerHTML= "<i class='bx bx-chevron-up'></i>"
-
-// })
-
 function moreClicked() {
     var dot = document.getElementById("dot");
     var moreContent = document.getElementById("content-add");
@@ -61,3 +51,25 @@ function moreClicked() {
       moreContent.style.display = "inline";
     }
   }
+
+  let audioArr = document.getElementsByTagName('audio');
+  let proBox = document.querySelector('.project-box');
+
+  proBox.addEventListener('mouseenter', () => {
+    audioArr[1].volume = 0.4;
+    audioArr[1].play();
+  })
+
+  let Nexus = document.querySelector('#Nexus');
+
+  Nexus.addEventListener('mouseenter', () => {
+    audioArr[1].volume = 0.4;
+    audioArr[1].play();
+  })
+
+  let Artisane = document.querySelector('#Artisane');
+
+  Artisane.addEventListener('mouseenter', () => {
+    audioArr[1].volume = 0.4;
+    audioArr[1].play();
+  })
