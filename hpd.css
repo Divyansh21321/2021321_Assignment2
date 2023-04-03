@@ -1,0 +1,83 @@
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+
+
+}
+body{
+    background-color: black;
+    padding: 10px;
+
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    /*background 9:42 */
+}
+.main-container{
+    padding: 10px 10% 10px 5%;
+
+}
+.main-nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.DivyanshText{
+    height: 25px;
+
+}
+#navigation-menu{
+}
+.li-tag{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 17px 8px 17px;
+    font-size: 15.5px;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+
+    
+    
+}
+.li-tag a{
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+}
+.li-tag a:after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: red;
+    position: absolute;
+    transition: 0.4s;
+}
+.li-tag a:hover::after{
+    width: 100%;
+
+}
+
+.home-intro{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+.home-intro h1{
+    font-size: 45px;
+    margin: -20px 0px -40px 0px;
+    color: red;
+}
+#span-1{
+    font-size: 30px;
+}
+#span-2{
+    font-size: 13px;
+    padding: 0px;
+}
